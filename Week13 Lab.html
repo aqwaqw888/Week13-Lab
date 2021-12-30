@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Week13 Lab</title>
+</head>
+<body>
+	<div id="result">hi</div>
+
+	<script type="text/javascript">
+		var text = window.prompt('Please enter a sentence:');
+		var letter = window.prompt('Please enter a letter:');
+		var output = "";
+		var div = document.getElementById("result");
+
+		for (var i = 0; i < text.length; ++i) {
+			if (text.charAt(i) == letter) {
+				output +="<h3>" + i + "</h3>";
+			}
+		}
+		div.innerHTML = output;
+	</script>
+</body>
+</html>
